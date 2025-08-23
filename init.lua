@@ -1,3 +1,11 @@
+-- Check if running in VSCode/Cursor
+if vim.g.vscode then
+  -- Load VSCode-specific configuration and exit early
+  require('vscode-config')
+  return
+end
+
+-- Regular Neovim configuration starts here
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
