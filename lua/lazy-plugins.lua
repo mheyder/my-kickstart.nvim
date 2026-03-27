@@ -1,21 +1,5 @@
 require('lazy').setup({
-  require 'plugins.git',
-  require 'plugins.sleuth',
-  require 'plugins.endwise',
-  require 'plugins.gitsigns',
-  require 'plugins.which-key',
-  require 'plugins.telescope',
-  require 'plugins.lspconfig',
-  require 'plugins.conform',
-  require 'plugins.copilot',
-  require 'plugins.completion',
-  require 'plugins.theme',
-  require 'plugins.todo-comments',
-  require 'plugins.mini',
-  require 'plugins.treesitter',
-  require 'plugins.autopairs',
-  require 'plugins.neo-tree',
-
+  { import = 'plugins' },
   { import = 'custom.plugins' },
 }, {
   ui = {
