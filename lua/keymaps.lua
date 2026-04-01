@@ -14,6 +14,10 @@ vim.keymap.set('t', '<C-k>', '<C-\\><C-n><C-w><C-k>', { desc = 'Move focus to th
 
 vim.keymap.set('n', '<leader>cf', ":let @+ = expand('%')<CR>", { silent = true })
 
+-- Git
+vim.keymap.set('n', '<leader>gb', '<cmd>Git blame<cr>', { desc = '[G]it [B]lame' })
+vim.keymap.set({ 'n', 'v' }, '<leader>gr', '<cmd>GBrowse<cr>', { desc = '[G]it B[r]owse' })
+
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
