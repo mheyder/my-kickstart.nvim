@@ -75,6 +75,7 @@ return {
 
       -- Server configs
       local servers = {
+        ruby_lsp = {},
         lua_ls = {
           settings = {
             Lua = {
